@@ -1,4 +1,12 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
-    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" },
+    { "source": "/login", "destination": "/login" },
+    { "source": "/register", "destination": "register" },
+    { "source": "/account", "destination": "/account" },
+    { "source": "/transaction", "destination": "/profile" },
+    { "source": "/top-up", "destination": "/top-up" },
+    { "source": "/pay/:service_code", "destination": "/pay/:service_code" }
+  ]
 }
